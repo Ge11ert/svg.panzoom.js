@@ -28,5 +28,6 @@ interface options {
 declare module '@svgdotjs/svg.js' {
   interface Svg {
     panZoom(options?: options | false): this
+    zoom(level: number, point?: { x: number, y: number }): this
   }
 }
